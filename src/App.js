@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import CeramicClient from "@ceramicnetwork/http-client"
+
+// const API_URL = "http://localhost:7007"
+const API_URL = "https://gateway-clay.ceramic.network"
+const ceramic = new CeramicClient(API_URL)
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Hello Ceramic</h1>
+      <div></div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
